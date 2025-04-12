@@ -1,0 +1,216 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(90deg, #004aad, #cb6ce6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #d9d9d9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px; /* Increased from 350px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Add specific styles for table container */
+.container.table-container {
+    width: 800px; /* Wider container for table */
+    max-width: 90vw; /* Responsive width */
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+select, input {
+    width: calc(100% - 16px); /* Account for padding */
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #eee9e9;
+    margin-bottom: 15px;
+}
+
+/* Form group for better spacing */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.upload-box {
+    border: 2px dashed #000;
+    padding: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.upload-box:hover {
+    background-color: #f0f0f0;
+    border-color: #004aad;
+}
+
+.upload-box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.upload-box p {
+    margin: 5px 0;
+}
+
+.selected-files {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.dragover {
+    background-color: #e0e0e0;
+    border-color: #004aad;
+}
+
+.upload-box input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+progress {
+    width: 100%;
+    height: 11px; /* Increased thickness */
+    border-radius: 5px;
+    appearance: none;
+    margin-top: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee9e9;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: linear-gradient(90deg, #004aad, #cb6ce6);
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #003780;
+}
+
+/* Table cell input alignment */
+td input, td select {
+    width: calc(100% - 8px);
+    margin: 2px;
+    padding: 4px;
+}
+
+/* Additional styles for table */
+table {
+    width: 100%;
+    background: #eee9e9;
+    border-radius: 5px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #004aad;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Admin panel specific styles */
+.admin-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #004aad, #cb6ce6);
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.admin-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Form styles */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional button styles */
+.secondary-button {
+    background: #6c757d;
+    margin-left: 10px;
+}
+
+.danger-button {
+    background: #dc3545;
+}
+
+/* Checkbox style */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
